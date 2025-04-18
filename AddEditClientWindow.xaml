@@ -1,0 +1,64 @@
+﻿<Window x:Class="WpfApp1.AddEditClientWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="AddEditClientWindow" Height="450" Width="600">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="Фамилия" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center"/>
+        <TextBlock Text="Имя" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center"/>
+        <TextBlock Text="Отчество" Grid.Column="0" Grid.Row="2" HorizontalAlignment="Center"/>
+        <TextBlock Text="Пол" Grid.Column="0" Grid.Row="3" HorizontalAlignment="Center"/>
+        <TextBlock Text="Дата рождения" Grid.Column="0" Grid.Row="4" HorizontalAlignment="Center"/>
+        <TextBlock Text="Паспорт" Grid.Column="0" Grid.Row="5" HorizontalAlignment="Center"/>
+        <TextBlock Text="Город" Grid.Column="0" Grid.Row="6" HorizontalAlignment="Center"/>
+        <TextBlock Text="Улица" Grid.Column="0" Grid.Row="7" HorizontalAlignment="Center"/>
+        <TextBlock Text="Дом" Grid.Column="0" Grid.Row="8" HorizontalAlignment="Center"/>
+        <TextBlock Text="Квартира" Grid.Column="0" Grid.Row="9" HorizontalAlignment="Center"/>
+        <TextBlock Text="Карта" Grid.Column="0" Grid.Row="10" HorizontalAlignment="Center"/>
+        <TextBlock Text="Шифр номера" Grid.Column="0" Grid.Row="11" HorizontalAlignment="Center"/>
+        <TextBlock Text="Дата заезда" Grid.Column="0" Grid.Row="12" HorizontalAlignment="Center"/>
+        <TextBlock Text="Дата выезда" Grid.Column="0" Grid.Row="13" HorizontalAlignment="Center"/>
+        
+        <TextBox Grid.Column="1" Grid.Row="0" HorizontalAlignment="Center" Width="300" x:Name="tbLastName"/>
+        <TextBox Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" Width="300" x:Name="tbFirstName"/>
+        <TextBox Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center" Width="300" x:Name="tbPatronymic"/>
+        <ComboBox Grid.Column="1" Grid.Row="3" HorizontalAlignment="Center" Width="300" x:Name="cbGender"/>
+        <DatePicker Grid.Column="1" Grid.Row="4" HorizontalAlignment="Center" Width="300" x:Name="dpDateBirth"/>
+        <TextBox Grid.Column="1" Grid.Row="5" HorizontalAlignment="Center" Width="300" x:Name="tbPassport"/>
+        <TextBox Grid.Column="1" Grid.Row="6" HorizontalAlignment="Center" Width="300" x:Name="tbCity"/>
+        <TextBox Grid.Column="1" Grid.Row="7" HorizontalAlignment="Center" Width="300" x:Name="tbStreet"/>
+        <TextBox Grid.Column="1" Grid.Row="8" HorizontalAlignment="Center" Width="300" x:Name="tbHouse"/>
+        <TextBox Grid.Column="1" Grid.Row="9" HorizontalAlignment="Center" Width="300" x:Name="tbAppartment"/>
+        <ComboBox Grid.Column="1" Grid.Row="10" HorizontalAlignment="Center" Width="300" x:Name="cbCard"/>
+        <ComboBox Grid.Column="1" Grid.Row="11" HorizontalAlignment="Center" Width="300" x:Name="cbRoom"/>
+        <DatePicker Grid.Column="1" Grid.Row="12" HorizontalAlignment="Center" Width="300" x:Name="dpDateIn"/>
+        <DatePicker Grid.Column="1" Grid.Row="13" HorizontalAlignment="Center" Width="300" x:Name="dpDateOut"/>
+
+        <Button Content="Добавить" Click="Button_Click" Grid.ColumnSpan="2" Grid.Row="14" Width="200" HorizontalAlignment="Left"/>
+        <Button Content="Отмена" Click="Button_Click_1" Grid.Row="14" Grid.ColumnSpan="2" Width="200" HorizontalAlignment="Right"/>
+    </Grid>
+</Window>
